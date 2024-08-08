@@ -44,4 +44,8 @@ Java SE Development Kit (JDK): Ensure that you have JDK 8 or later installed on 
   javac SimpleCalculatorUI.java
   java SimpleCalculatorUI
 
+# Snapshot
+
+    ![c](https://github.com/user-attachments/assets/2f1c09ed-0cc9-42e2-b63b-2eba1818da20)
+
 
