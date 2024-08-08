@@ -11,7 +11,7 @@
 The Simple Calculator UI is a user-friendly desktop application built using Java Swing. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division through a graphical user interface (GUI).
 
 # Features
-Graphical User Interface: The calculator features a simple and intuitive GUI with clearly labeled input fields and buttons, making it accessible for users of all skill levels.
+- **Graphical User Interface:** The calculator features a simple and intuitive GUI with clearly labeled input fields and buttons, making it accessible for users of all skill levels.
 
 - **Arithmetic Operations**: The calculator supports the four fundamental arithmetic operations:
   Addition (+)
