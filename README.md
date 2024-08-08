@@ -28,9 +28,9 @@ Graphical User Interface: The calculator features a simple and intuitive GUI wit
 - **Error Handling**: The program handles common errors such as division by zero, and invalid number entries, and provides user-friendly error messages to help users understand and correct issues.
 
 # How to Use
-Enter Numbers: Input the first and second numbers into the designated text fields.
-Select Operation: Click on one of the four operation buttons (+, -, *, /) to perform the desired calculation.
-- **View Result**: The result will be displayed in the lower part of the window.
+- **Enter Numbers:** Input the first and second numbers into the designated text fields.
+- **Select Operation:** Click on one of the four operation buttons (+, -, *, /) to perform the desired calculation.
+- **View Result:** The result will be displayed in the lower part of the window.
 
 # Prerequisites
 Java SE Development Kit (JDK): Ensure that you have JDK 8 or later installed on your system.
