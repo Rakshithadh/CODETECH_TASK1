@@ -1,0 +1,107 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class SimpleCalculatorUI extends JFrame {
+
+    private JTextField num1Field;
+    private JTextField num2Field;
+    private JLabel resultLabel;
+
+    public SimpleCalculatorUI() {
+        setTitle("Simple Calculator");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new GridLayout(5, 2, 10, 10));
+
+        
+        JLabel num1Label = new JLabel("Enter the first number:");
+        num1Field = new JTextField();
+        JLabel num2Label = new JLabel("Enter the second number:");
+        num2Field = new JTextField();
+
+        
+        JButton addButton = new JButton("+");
+        JButton subtractButton = new JButton("-");
+        JButton multiplyButton = new JButton("*");
+        JButton divideButton = new JButton("/");
+
+        addButton.addActionListener(new OperationButtonListener('+'));
+        subtractButton.addActionListener(new OperationButtonListener('-'));
+        multiplyButton.addActionListener(new OperationButtonListener('*'));
+        divideButton.addActionListener(new OperationButtonListener('/'));
+
+      
+        resultLabel = new JLabel("Result will be displayed here");
+        resultLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+        
+        add(num1Label);
+        add(num1Field);
+        add(num2Label);
+        add(num2Field);
+        add(addButton);
+        add(subtractButton);
+        add(multiplyButton);
+        add(divideButton);
+        add(resultLabel);
+    }
+
+    private class OperationButtonListener implements ActionListener {
+        private char operation;
+
+        public OperationButtonListener(char operation) {
+            this.operation = operation;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                double num1 = Double.parseDouble(num1Field.getText());
+                double num2 = Double.parseDouble(num2Field.getText());
+                double result = 0;
+                boolean validOperation = true;
+
+                switch (operation) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        if (num2 != 0) {
+                            result = num1 / num2;
+                        } else {
+                            JOptionPane.showMessageDialog(SimpleCalculatorUI.this,
+                                    "Error: Division by zero is not allowed.", "Error", JOptionPane.ERROR_MESSAGE);
+                            validOperation = false;
+                        }
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(SimpleCalculatorUI.this,
+                                "Error: Invalid operation selected.", "Error", JOptionPane.ERROR_MESSAGE);
+                        validOperation = false;
+                }
+
+                if (validOperation) {
+                    resultLabel.setText("The result is: " + result);
+                }
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(SimpleCalculatorUI.this,
+                        "Error: Please enter valid numbers.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            SimpleCalculatorUI calculator = new SimpleCalculatorUI();
+            calculator.setVisible(true);
+        });
+    }
+}
