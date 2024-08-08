@@ -7,9 +7,7 @@
 - Duration: July to August 2024 
 - Mentor:Neela Santhosh kumar
 
-Project Overview: **Basic Calculator Program**
-
-# Overview
+# Project Overview :  **Basic Calculator Program**
 The Simple Calculator UI is a user-friendly desktop application built using Java Swing. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division through a graphical user interface (GUI).
 
 # Features
