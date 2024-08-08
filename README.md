@@ -30,7 +30,7 @@ Graphical User Interface: The calculator features a simple and intuitive GUI wit
 # How to Use
 Enter Numbers: Input the first and second numbers into the designated text fields.
 Select Operation: Click on one of the four operation buttons (+, -, *, /) to perform the desired calculation.
-- View Result: The result will be displayed in the lower part of the window.
+- **View Result**: The result will be displayed in the lower part of the window.
 
 # Prerequisites
 Java SE Development Kit (JDK): Ensure that you have JDK 8 or later installed on your system.
