@@ -35,5 +35,4 @@ Select Operation: Click on one of the four operation buttons (+, -, *, /) to per
 # Prerequisites
 Java SE Development Kit (JDK): Ensure that you have JDK 8 or later installed on your system.
 
-![calci](https://github.com/user-attachments/assets/0f79ca9e-891f-43f3-84d5-5ce87e08329a)
 
