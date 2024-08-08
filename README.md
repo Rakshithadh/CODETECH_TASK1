@@ -35,4 +35,13 @@ Select Operation: Click on one of the four operation buttons (+, -, *, /) to per
 # Prerequisites
 Java SE Development Kit (JDK): Ensure that you have JDK 8 or later installed on your system.
 
+# Running the Application
+1. Clone the Repository:
+  git clone https://github.com/yourusername/SimpleCalculatorUI.git
+2. Navigate to the Project Directory:
+  cd SimpleCalculatorUI
+3. Compile and Run:
+  javac SimpleCalculatorUI.java
+  java SimpleCalculatorUI
+
 
