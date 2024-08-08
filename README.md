@@ -16,10 +16,10 @@ The Simple Calculator UI is a user-friendly desktop application built using Java
 Graphical User Interface: The calculator features a simple and intuitive GUI with clearly labeled input fields and buttons, making it accessible for users of all skill levels.
 
 - Arithmetic Operations: The calculator supports the four fundamental arithmetic operations:
-Addition (+)
-Subtraction (-)
-Multiplication (*)
-Division (/) (with error handling for division by zero)
+**Addition (+)**
+**Subtraction (-)**
+**Multiplication (*)**
+**Division (/)**(with error handling for division by zero)
 
 - Input Validation: The application includes robust input validation to ensure that users enter valid numbers. If an invalid input is detected, an error message is displayed, guiding the user to correct their input.
 
